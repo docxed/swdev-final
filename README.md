@@ -1,5 +1,3 @@
-# swdev-final
-
 <h2>deploy ไปยังเครื่อง server ที่กำหนดให้</h2>
 <ul>
 <li>frontend: <a href="http://159.223.45.216:2015">http://159.223.45.216:2015</a></li>
@@ -10,6 +8,22 @@
 <li>frontend: <a href="https://final-62070215-frontend.herokuapp.com">https://final-62070215-frontend.herokuapp.com</a></li>
 <li>backend: <a href="https://final-62070215-backend.herokuapp.com">https://final-62070215-backend.herokuapp.com</a></li>
 </ul>
+<h2>วิธีการ run ผ่าน local</h2>
+<p><strong>frontend</strong></p>
+<ol>
+<li>ทำการ clone</li>
+<li>ทำการ cd ไปที่ ./frontend</li>
+<li>ทำการพิมพ์คำสั่ง yarn install</li>
+<li>ทำการพิมพ์คำสั่ง yarn serve เพื่อรัน</li>
+</ol>
+<p><strong>backend</strong></p>
+<ol>
+<li>ทำการ clone</li>
+<li>ทำการ cd ไปที่ ./backend</li>
+<li>ทำการพิมพ์คำสั่ง yarn install</li>
+<li>ทำการ comment โค้ดบรรทัด 29 ที่ ./backend/src/index.js</li>
+<li>ทำการพิมพ์คำสั่ง yarn dev เพื่อรัน</li>
+</ol>
 <h2>update pipeline</h2>
 <p>Update Pipeline : Auto Deploy and Build in target server</p>
 <p>มีการเพิ่มขั้นตอน deploy ลงไปใน Jenkins Pipeline ทั้งในส่วนของ Frontend และ Backend ซึ่งเป็นการ deploy ไปยังเครื่อง server เป้าหมาย โดยมีกระบวนการทำงานของขั้นตอนนี้ ดังนี้</p>
