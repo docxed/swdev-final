@@ -92,7 +92,7 @@ export default {
     submitSignin() {
       Nprogress.start()
       axios
-        .post(`http://localhost:3001/users/signin`, this.signin)
+        .post(`http://159.223.45.216:2016/users/signin`, this.signin)
         .then((res) => {
           Nprogress.done()
           if (res.data.status) {

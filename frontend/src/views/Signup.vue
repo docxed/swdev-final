@@ -161,7 +161,7 @@ export default {
     submitSignup() {
       Nprogress.start()
       axios
-        .post(`http://localhost:3001/users/signup`, this.signup)
+        .post(`http://159.223.45.216:2016/users/signup`, this.signup)
         .then((res) => {
           Nprogress.done()
           if (res.data.status) {
