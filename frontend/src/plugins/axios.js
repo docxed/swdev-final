@@ -3,9 +3,9 @@ import router from "../router"
 import Nprogress from "nprogress"
 
 const instance = axios.create({
-  // baseURL: "https://cryptic-thicket-17532.herokuapp.com",
-  baseURL: "http://localhost:3001",
-  // baseURL: "http://159.223.45.216:6481",
+  // baseURL: "https://final-62070215-backend.herokuapp.com",
+  // baseURL: "http://localhost:3001",
+  baseURL: "http://159.223.45.216:2016",
 })
 
 instance.interceptors.request.use(
