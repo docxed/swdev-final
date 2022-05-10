@@ -1,0 +1,10 @@
+version: "3" 
+services:
+  frontend:
+    image: docxed/final-62070215-frontend:${TTF_TAG}
+    ports:
+      - "2015:80"
+  backend:
+    image: docxed/final-62070215-backend:${TTB_TAG}
+    ports:
+      - "2016:3001"

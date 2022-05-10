@@ -37,6 +37,12 @@ const routes = [
     meta: { login: true },
     component: () => import("../views/Reserve.vue"),
   },
+  {
+    path: "/success",
+    name: "Success",
+    meta: { login: true },
+    component: () => import("../views/Success.vue"),
+  },
 ]
 
 const router = createRouter({

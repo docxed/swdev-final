@@ -54,6 +54,17 @@
                   ลงทะเบียนรับวัคซีน</router-link
                 >
               </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/success"
+                  ><span class="text-center">
+                    <i
+                      class="fa-solid fa-clock-rotate-left"
+                      style="width: 5vh"
+                    ></i>
+                  </span>
+                  ประวัติการจองของฉัน</router-link
+                >
+              </li>
               <template v-if="user">
                 <div class="dropdown-divider"></div>
                 <li class="nav-item">

@@ -14,9 +14,11 @@ app.use(express.urlencoded({ extended: true }))
 
 // Router
 const userRouter = require("../routes/users")
+const reserveRouter = require("../routes/reserve")
 
 // Router Using
 app.use(userRouter.router)
+app.use(reserveRouter.router)
 
 const port = process.env.PORT || 3001
 
@@ -24,4 +26,4 @@ app.listen(port, () => {
   console.log(`Server is started and Connected to port ${port}`.rainbow)
 })
 
-// export default app
+export default app
